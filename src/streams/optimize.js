@@ -27,7 +27,7 @@ function optimize(image, callback){
 
   image.log.time('optimize:' + image.format);
 
-  imgmin.optimize(function(err, data){
+  imgmin.run(function(err, data){
     image.log.timeEnd('optimize:' + image.format);
 
     if (err){

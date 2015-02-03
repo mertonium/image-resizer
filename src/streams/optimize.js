@@ -27,7 +27,7 @@ function optimize(image, callback){
 
   image.log.time('optimize:' + image.format);
 
-  imgmin.run(function(err, data){
+  imgmin.run(function(err, files, stream){
     image.log.timeEnd('optimize:' + image.format);
 
     if (err){
@@ -35,7 +35,8 @@ function optimize(image, callback){
       image.error = new Error(err);
       callback(null, image);
     } else {
-      image.contents = data.contents;
+      // TODO - Not sure how to deal with multiple files coming back here
+      image.contents = files[0]._contents;
       callback(null, image);
     }
   });

@@ -41,6 +41,7 @@
     "gulp-mocha": "~0.4.1",
     "gulp-nodemon": "~1.0.0",
     "gulp-util": "~2.2.14",
+    "jshint-stylish": "~0.1.5",
     "imagemin": "~3.0.0",
     "knox": "~0.8.9",
     "lodash": "~2.4.1",

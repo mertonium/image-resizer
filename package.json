@@ -4,8 +4,7 @@
   "description": "On-the-fly image resizing and optimization using node and graphicsmagick. Heroku ready!",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test",
-    "postinstall": "gulp watch"
+    "test": "gulp test"
   },
   "keywords": [
     "image",
